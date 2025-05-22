@@ -1,0 +1,29 @@
+#about {
+	display: flex;
+	flex-direction: column-reverse;
+
+	/* background-image: url("/shared/media/em.png"); */
+	background-image:
+		/* linear-gradient(to bottom, var(--color-bg-transparent) 50%, var(--color-bg)), */
+		url("/shared/media/em.png"),
+		linear-gradient(to right, var(--color-accent-1), var(--color-accent-2));
+	background-size: auto 30rem;
+	background-repeat: no-repeat;
+
+	width: 20rem;
+	height: 30rem;
+}
+
+#contact {
+	display: flex;
+	flex-direction: column;
+}
+
+#contact a {
+	padding: 0.5rem 1rem;
+	vertical-align: middle;
+}
+
+#contact a i {
+	width: 1rem;
+}

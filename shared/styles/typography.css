@@ -1,0 +1,66 @@
+h1, h2, h3, h4, h5, h6, subtitle, p, a, li, ul, ol, span {
+	margin: 0;
+	padding: 0;
+
+	font-size: var(--font-s);
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+
+	line-height: 1.5;
+}
+
+
+h1, h2, h3, h4, h5, h6 /*, subtitle*/ {
+	font-weight: 900;
+}
+
+li {
+	margin-left: 1rem;
+}
+
+h1 {
+	font-size: var(--font-l);
+}
+
+a {
+	position: relative; /* needed for ::before to position correctly */
+	z-index: 0;
+
+	text-decoration: none;
+	
+	color: var(--color-text);
+
+	transition: color var(--time-a-out) ease;
+}
+
+a:hover {
+	color: var(--color-bg);
+
+	transition: color var(--time-a-in) ease;
+}
+
+a::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+
+	background-size: 200% 100%;
+	/* background-image: linear-gradient(to right, var(--color-bg-transparent) 50%, var(--color-accent) 50%); */
+	background-image:
+		linear-gradient(to left, var(--color-bg-transparent) 50%, var(--color-bg) 50%),
+		linear-gradient(to right, var(--color-accent-1) 50%, var(--color-accent-2));
+
+	opacity: 0.0;
+
+	transition: opacity var(--time-a-out) ease, background-position var(--time-a-out) ease;
+}
+
+a:hover::before {
+	background-position: -100% 0;
+	opacity: 1;
+
+	transition: opacity var(--time-a-in) ease, background-position var(--time-a-in) ease;
+}

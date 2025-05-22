@@ -1,0 +1,21 @@
+#resume h2 {
+	font-size: var(--font-m);
+}
+
+#resume #experience {
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
+}
+
+#resume #experience .resume_item {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+}
+
+#resume #experience .resume_item .details {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}

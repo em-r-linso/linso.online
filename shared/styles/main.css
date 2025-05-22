@@ -1,0 +1,60 @@
+:root {
+	--color-bg: #fff;
+	--color-bg-transparent: #fff0;
+	--color-accent-1: pink;
+	--color-accent-2: lightblue;
+	--color-text: #000;
+
+	--font-l: 2rem;
+	--font-m: 1.5rem;
+	--font-s: 1rem;
+
+	--time-a-in: 0.3s;
+	--time-a-out: 0.15s;
+}
+
+* { /* always baffled that this isn't the standard lmao */
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+
+	box-sizing: content-box;
+	margin: 0 auto;
+	padding: 0 1rem; /* minimum white edges on left/right */
+	max-width: 60rem;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#container {
+	flex-grow: 1;
+
+	display: flex;
+	flex-direction: row;
+}
+
+main, #about {
+	padding-top: 2rem; /* basically space between header and content */
+}
+
+main {
+	/* flex-grow: 1; */
+	padding-right: 1rem; /* to line up with nav text */
+	padding-left: 2rem; /* basically space between #about and main */
+	padding-bottom: 5rem; /* cozy extra space */
+}
+
+footer {
+	text-align: center;
+	color: var(--color-bg);
+	padding: 5rem 1rem;
+	background-image: linear-gradient(to right, var(--color-accent-1), var(--color-accent-2));
+}
