@@ -24,6 +24,10 @@ h1 {
 	font-size: var(--font-l);
 }
 
+h2 {
+	font-size: var(--font-m);
+}
+
 a {
 	position: relative; /* needed for ::before to position correctly */
 	z-index: 0;

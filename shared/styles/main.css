@@ -46,7 +46,8 @@ main, #about {
 }
 
 main {
-	/* flex-grow: 1; */
+	flex-grow: 1;
+	flex-shrink: 1;
 	padding-right: 1rem; /* to line up with nav text */
 	padding-left: 2rem; /* basically space between #about and main */
 	padding-bottom: 5rem; /* cozy extra space */
