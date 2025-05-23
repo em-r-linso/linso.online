@@ -1,6 +1,15 @@
 #about {
 	display: flex;
-	flex-direction: column-reverse;
+	flex-direction: column;
+
+	width: 15rem;
+
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+#about #profile_pic {
+	height: 25rem;
 
 	background-image:
 		url("/shared/media/em.png"),
@@ -8,15 +17,9 @@
 	background-size: auto 30rem;
 	background-repeat: no-repeat;
 	background-position: 50% 0;
-
-	width: 15rem;
-	height: 30rem;
-
-	flex-grow: 0;
-	flex-shrink: 0;
 }
 
-#contact {
+#about #contact {
 	display: flex;
 	flex-direction: column;
 }
