@@ -50,10 +50,10 @@ main {
 	flex-shrink: 1;
 	padding-right: 1rem; /* to line up with nav text */
 	padding-left: 2rem; /* basically space between #about and main */
-	padding-bottom: 5rem; /* cozy extra space */
 }
 
 footer {
+	margin-top: 5rem; /* cozy extra space (basically main's padding-bottom) */
 	text-align: center;
 	color: var(--color-bg);
 	padding: 5rem 1rem;
